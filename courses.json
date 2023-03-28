@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Web Development",
+    "description": "Learn the basics of web development with HTML, CSS, and JavaScript.",
+    "level": "Beginner",
+    "prerequisites": [],
+    "category": 1
+  },
+  {
+    "id": 2,
+    "title": "Advanced Web Development",
+    "description": "Build complex web applications with React, Node.js, and MongoDB.",
+    "level": "Intermediate",
+    "prerequisites": ["Introduction to Web Development"],
+    "category": 1
+  },
+  {
+    "id": 3,
+    "title": "Introduction to Mobile Development",
+    "description": "Learn the basics of mobile development with React Native and Expo.",
+    "level": "Beginner",
+    "prerequisites": ["Introduction to Web Development"],
+    "category": 2
+  },
+  {
+    "id": 4,
+    "title": "Data Analysis with Python",
+    "description": "Learn how to analyze and visualize data using Python and Pandas.",
+    "level": "Intermediate",
+    "prerequisites": ["Introduction to Web Development"],
+    "category": 3
+  },
+  {
+    "id": 5,
+    "title": "User Interface Design Fundamentals",
+    "description": "Learn the basics of user interface design with Sketch.",
+    "level": "Beginner",
+    "prerequisites": [],
+    "category": 4
+  },
+  {
+    "id": 6,
+    "title": "Cloud Computing with AWS",
+    "description": "Learn how to deploy and scale web applications on Amazon Web Services.",
+    "level": "Intermediate",
+    "prerequisites": ["Introduction to Web Development"],
+    "category": 5
+  }
+]
