@@ -151,6 +151,7 @@
   overflow: hidden;
   transition: box-shadow 0.2s ease-in-out;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .course-card:hover {
@@ -190,26 +191,6 @@
   background-color: #ffe3f0;
   padding: 16px;
   border-radius: 8px;
-}
-
-.view-course {
-  position: absolute;
-  bottom: 30px;
-  right: 16px;
-  line-height: 1;
-  background-color: #ff69b4;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.view-course:hover {
-  background-color: #fd4c7e;
 }
 
 .course-modal {
@@ -363,7 +344,6 @@
     order: 1;
   }
 }
-
 
 /* Tablet styles */
 @media only screen and (min-width: 601px) and (max-width: 900px) {

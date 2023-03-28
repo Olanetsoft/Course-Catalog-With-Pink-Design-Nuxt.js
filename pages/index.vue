@@ -40,9 +40,7 @@
                   <div class="level">{{ course.level }}</div>
                 </div>
               </div>
-              <button class="view-course" @click="openCourseModal(course)">
-                View Course
-              </button>
+            
             </div>
           </div>
         </div>
