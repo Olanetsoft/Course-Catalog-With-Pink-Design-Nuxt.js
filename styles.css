@@ -229,22 +229,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .category {
-    margin: 5px;
+    margin: 4px;
   }
   .content {
     width: 100%;
     margin-top: 20px;
   }
   .course-catalogue-title {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
+    display: none;
   }
   .search {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .courses {
     display: flex;
@@ -282,69 +280,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sidebar {
-    order: 2;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-  }
-
-  .category {
-    flex-basis: 50%;
-    padding: 0.5rem;
-  }
-
-  .content {
-    order: 1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .course-catalogue-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .search {
-    margin-bottom: 2rem;
-  }
-
-  .courses {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
-
-  .course-card {
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .sidebar {
-    order: 2;
-  }
-  .content {
-    order: 1;
-  }
-}
-
 /* Tablet styles */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .categories {
@@ -353,5 +288,35 @@
   .course-card {
     width: 45%;
     margin: 10px;
+  }
+}
+
+/* affect all screens sizes */
+.partial {
+  --p-padding: 1.25rem;
+  padding: var(--p-padding);
+}
+/* affect only small screens */
+@media (max-width: 767.99px) {
+  .partial {
+    --p-padding: 1rem;
+  }
+}
+/* affect only small & medium screens */
+@media (max-width: 1198.99px) {
+  .partial {
+    --p-padding: 1rem;
+  }
+}
+/* affect only medium and larger screens */
+@media (min-width: 768px) {
+  .partial {
+    --p-padding: 1rem;
+  }
+}
+/* affect only small and larger screens */
+@media (max-width: 767.99px) and (min-width: 1199px) {
+  .partial {
+    --p-padding: 1rem;
   }
 }
