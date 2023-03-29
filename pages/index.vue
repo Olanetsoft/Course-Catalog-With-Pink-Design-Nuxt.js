@@ -86,8 +86,8 @@ export default {
       ],
       courses: coursesData,
       selectedCategories: [],
-      selectedCourse: null,
       searchQuery: "",
+      selectedCourse: null,
     };
   },
   methods: {
